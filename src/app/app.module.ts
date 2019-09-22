@@ -9,7 +9,9 @@ import { ListComponent } from './components/list/list.component';
 import { PageNotFoundComponent } from './components/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { ListItemComponent } from './components/home/list-item/list-item.component';
+import { HomeListItemComponent } from './components/home/home-list-item/home-list-item.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ListItemComponent } from './components/list/list-item/list-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { ListItemComponent } from './components/home/list-item/list-item.compone
     ListComponent,
     PageNotFoundComponent,
     ListItemComponent,
-
+    FooterComponent,
+    HomeListItemComponent
   ],
   imports: [
     BrowserModule,

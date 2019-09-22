@@ -10,29 +10,7 @@
         </div>
     </div>
 </div> -->
-<div class="panel panel-default" *ngFor="let doc of DoctorsList">
-<div class="panel-body">
-    <div class="row">
-        <div class="panel-row">
-        <div class="col-xs-4 " >
-            <div class="img-lay">
-            <img
-              [src]="doc.imagePath">
-              </div>
-        </div>
-        <div class="col-xs-8">
-            
-            <div class="doc-head">
-                <div class="doc-info">
-                <h2 class="name">{{doc.name}}</h2> <span class="rating">{{doc.rating}}</span>
-                </div>
-            <p class="title">{{doc.jobTitle}}</p>
-
-            </div>
-            <p class="address"><span>St.</span>{{doc.address}}</p>
-            
-        </div>
-    </div>
-    </div>
+<div class="col-xs-12" *ngFor="let doc of DoctorsList">
+<app-list-item [doc]="doc"></app-list-item>
 </div>
-</div>
+ 

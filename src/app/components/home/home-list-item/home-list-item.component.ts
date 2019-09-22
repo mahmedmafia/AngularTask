@@ -3,11 +3,11 @@ import { User } from '../user.model';
 import { DataStorageService } from '../data-storage.service';
 
 @Component({
-  selector: 'app-list-item',
-  templateUrl: './list-item.component.html',
-  styleUrls: ['./list-item.component.css']
+  selector: 'app-home-list-item',
+  templateUrl: './home-list-item.component.html',
+  styleUrls: ['./home-list-item.component.css']
 })
-export class ListItemComponent implements OnInit {
+export class HomeListItemComponent implements OnInit {
   @Input() user: User;
   editMode = false;
 
