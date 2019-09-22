@@ -8,7 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ListComponent } from './components/list/list.component';
 import { PageNotFoundComponent } from './components/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ListItemComponent } from './components/home/list-item/list-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +18,16 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     ListComponent,
     PageNotFoundComponent,
+    ListItemComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

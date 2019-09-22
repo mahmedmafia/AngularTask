@@ -1,0 +1,7 @@
+{
+  "blogs": [
+    { "id": 1, "title": "Best Front End FrameWork" },
+    { "id": 2, "title": "Angular 10 Check What's New" },
+    { "id": 3, "title": "React vs Vue" }
+  ]
+}
