@@ -1,0 +1,48 @@
+.panel-row{
+    display:flex;
+    align-items: center;
+
+}
+.doc-info{
+    display: flex;
+    align-items: center;
+}
+.name{
+margin:0;
+margin-right:20px;
+font-size: 2.5em;
+}
+.rating
+{
+    font-size:1.2em;
+    color:rgb(187, 187, 187);
+}
+.title{
+    margin:1px 0px;
+    color:rgb(114, 224, 114);
+    font-style: italic;
+    font-size: 2em;
+}
+.address{
+    font-size:1.5em;
+    font-weight: 300;
+    opacity: .6;
+    margin:5px 0px;
+}
+.address span{
+    margin-right:2px;
+}
+.doc-head{
+    margin-bottom: 10px;
+}
+.img-lay{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    overflow: hidden;
+    margin:auto;
+}
+.img-lay img{
+    width:100%;
+    height:100%;
+}
