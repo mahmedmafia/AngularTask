@@ -1,1 +1,49 @@
-<p>register works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div *ngIf="image.value" class="img-lay">
+        <img [src]="image.value" style="width:100%;height:100%">
+      </div>
+
+      <div class="form-group">
+        <label>Image</label>
+        <input type="text" class="form-control" placeholder="Place Image Url" formControlName="image" #image>
+        <span *ngIf="!imageInput.valid && imageInput.touched" class="alert alert-danger help-block">Please Enter a Url
+          Image</span>
+      </div>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control" placeholder="Your Full Name" formControlName="fullName">
+        <span *ngIf="!fullName.valid && fullName.touched" class="alert alert-danger help-block">Please Enter a
+          Name</span>
+      </div>
+      <div class="form-group">
+        <label>Birthday</label>
+        <input type="date" class="form-control" placeholder="dd/mm/yy" formControlName="birthday">
+        <span *ngIf="!birthday.valid && birthday.touched" class="alert alert-danger help-block">Please Enter a valid Date
+        </span>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Your Email" formControlName="email">
+        <span *ngIf="!email.valid && email.touched" class="alert alert-danger help-block">Please Enter a Valid
+          Email</span>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" class="form-control" placeholder="Your Phone Number" formControlName="phone">
+        <span *ngIf="!phone.valid && phone.touched" class="alert alert-danger help-block">Please Enter a Phone Number
+          </span>
+      </div>
+      <div class="form-group">
+        <label>Location/Address</label>
+        <input type="text" class="form-control" placeholder="Your Location" formControlName="location">
+        <span *ngIf="!location.valid && location.touched" class="alert alert-danger help-block">Please Enter a Phone Number
+        </span>
+      </div>
+      <div class="btn-container">
+        <button type="submit" class="btn btn-success btn-shape" [disabled]="!registerForm.valid">Next</button>
+      </div>
+    </form>
+  </div>
+</div>
