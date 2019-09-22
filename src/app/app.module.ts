@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListComponent } from './components/list/list.component';
+import { PageNotFoundComponent } from './components/not-found/not-found.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { ListComponent } from './components/list/list.component';
     RegisterComponent,
     HomeComponent,
     ListComponent,
-   
+    PageNotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
