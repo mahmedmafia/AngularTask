@@ -1,49 +1,41 @@
-<a [routerLink]="[doc.id]" >
- <div class="panel panel-default">
-   <div class="panel-body">
-     <div class="row">
-       <div class="panel-row">
-         <div class="col-xs-4 ">
-           <div class="img-lay">
-             <img [src]="doc.imagePath">
-           </div>
-         </div>
-         <div class="col-xs-8">
+<a  (click)="openDialog()">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="row">
+        <div class="panel-row">
+          <div class="col-xs-4 ">
+            <div class="img-lay">
+              <img [src]="doc.imagePath">
+            </div>
+          </div>
+          <div class="col-xs-8">
 
-           <div class="doc-head">
-             <div class="doc-info">
-               <h2 class="name">{{doc.name}}</h2> <span class="rating">{{doc.rating}}</span>
-             </div>
-             <p class="title">{{doc.jobTitle}}</p>
+            <div class="doc-head">
+              <div class="doc-info">
+                <h2 class="name">{{doc.name}}</h2> <span class="fa fa-star fa-lg checked"></span><span class="rating">{{doc.rating}}</span>
+              </div>
+              <p class="title">{{doc.jobTitle}}</p>
 
-           </div>
-           <p class="address"><span>St.</span>{{doc.address}}</p>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</a>
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <p class="address"><span>St.</span>{{doc.address}}</p>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
-</div>
+</a>
+
+
+<!-- <ol>
+  <li>
+    <mat-form-field>
+      <input matInput [(ngModel)]="name" placeholder="What's your name?">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Pick one</button>
+  </li>
+  <li *ngIf="animal">
+    You chose: <i>{{animal}}</i>
+  </li>
+</ol> -->

@@ -7,7 +7,7 @@ export class listService {
 
     getDocs() {
         let i = 0;
-        while (i < 200) {
+        while (i < 1) {
 
             const newDoc = new Doctor(i, 'Magdy Yacoub', 3.5, 'Heart Speciallist', 'Broklin',
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsiwRkOYw2G5ijkWaiUD424HhD9FoxEw4fHvwSJ5Qc04q1hten');

@@ -1,0 +1,24 @@
+<h1 mat-dialog-title class="text-center">Give Feedback</h1>
+<div mat-dialog-content class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="info-data">
+        <img class="img-lay" [src]="data.imagePath">
+        <div class="doc-head">
+          <div class="doc-info">
+            <h3 class="name">{{data.name}}</h3>
+          </div>
+          <p class="title">{{data.jobTitle}}</p>
+        </div>
+      </div>
+      <span class="rating">Stars</span>
+      <h5>Feedback</h5>
+        <input [(ngModel)]="feedback" class="form-control" placeholder="Write Your Feddback">
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="data" class="btn-shape">Send</button>
+    <button mat-button (click)="onNoClick()" class="btn bn-block" style="width: 100%;
+     font-size: 1.5em;">No Thanks</button>
+  </div>
+</div>
