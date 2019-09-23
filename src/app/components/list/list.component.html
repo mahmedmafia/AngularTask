@@ -1,4 +1,6 @@
+<cdk-virtual-scroll-viewport [itemSize]="200" style="height:1000px" class="virtual-scroll">
 
-  <div *cdkVirtualFor="let doc of DoctorsList">
+  <div *cdkVirtualFor="let doc of DoctorsList; templateCacheSize:0">
     <app-list-item [doc]="doc"></app-list-item>
 </div>
+</cdk-virtual-scroll-viewport>
