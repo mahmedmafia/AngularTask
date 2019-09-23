@@ -1,0 +1,40 @@
+ .customRow{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.success{
+    background:rgb(89, 221, 100);
+    color:white;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+}
+li:hover,li.activel{
+    border-bottom:3px solid white;
+
+}
+/*
+ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    height: 100%;
+}
+li{
+    float:left;
+    font-size:1.2em;
+    height: 100%;
+}
+.logo{
+    padding:0px;
+}
+.logo a{
+    font-size: 1.5em;
+} */
