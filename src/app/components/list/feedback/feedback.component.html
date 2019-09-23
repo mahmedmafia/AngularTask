@@ -11,9 +11,10 @@
           <p class="title">{{data.jobTitle}}</p>
         </div>
       </div>
-      <span class="rating">Stars</span>
+      <span class="rating">{{data.rating}}</span>
       <h5>Feedback</h5>
-        <input [(ngModel)]="feedback" class="form-control" placeholder="Write Your Feddback">
+      <textarea [(ngModel)]="feedback" rows="3"  class="form-control" placeholder="Write Your Feddback">
+          </textarea>
     </div>
   </div>
   <div mat-dialog-actions>

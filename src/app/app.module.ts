@@ -17,6 +17,8 @@ import { FeedbackComponent } from './components/list/feedback/feedback.component
 import { MaterialModule } from './app-material.module';
 import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material';
+import { InfiniteScrollDirective } from './components/shared/infinite-scroll.directive';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { MatFormFieldModule } from '@angular/material';
     ListItemComponent,
     FooterComponent,
     HomeListItemComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    InfiniteScrollDirective
   ],
   imports: [
     BrowserModule,
@@ -40,8 +43,8 @@ import { MatFormFieldModule } from '@angular/material';
     MaterialModule,
     MatDialogModule,
     MatFormFieldModule,
-    BrowserAnimationsModule
-
+    BrowserAnimationsModule,
+    ScrollingModule
   ],
    entryComponents: [
     FeedbackComponent

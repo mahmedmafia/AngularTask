@@ -2,19 +2,18 @@
 .info-data{
     display: flex;
     align-items: center;
-    padding:5px 20px;
+    padding:5px 15px;
 }
 
 
 .name {
-  margin: 0;
-  margin-right: 20px;
+  margin: 2px;
   font-size: 1.8em;
 }
 
 .rating {
-  font-size: 1.2em;
-  color: rgb(187, 187, 187);
+  font-size: 1.5em;
+  color: rgb(138, 138, 138);
 }
 
 .title {
@@ -35,7 +34,7 @@
   width: 80px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right:20px;
+  margin-right:10px;
 }
 
 .img-lay img {

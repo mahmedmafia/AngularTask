@@ -39,8 +39,8 @@ export class FeedbackComponent implements OnInit {
     while (i < numofStars) {
       if (i < totalFullStars) {
         this.stars.push(2);
-        
-      } else if (i === semiHalfStarIndex-1) {
+
+      } else if (i === semiHalfStarIndex - 1) {
         this.stars.push(1);
 
       } else {

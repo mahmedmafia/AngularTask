@@ -1,16 +1,6 @@
-<!-- <div class="row">
-    <div class="col-xs-12">
-        <div class="row" *ngFor="let doc of DoctorsList">
-            <div class="col-xs-2">
-                <img [src]="doc.imagePath">
-            </div>
-            <div class="col-xs-8">
 
-            </div>
-        </div>
-    </div>
-</div> -->
-<div class="col-xs-12" *ngFor="let doc of DoctorsList">
-<app-list-item [doc]="doc"></app-list-item>
+<!-- <cdk-virtual-scroll-viewport itemSize="200" style="height:100vh;width:100%"> -->
+<div *ngFor="let doc of DoctorsList">
+  <app-list-item [doc]="doc"></app-list-item>
 </div>
- 
+<!-- </cdk-virtual-scroll-viewport> -->
