@@ -1,6 +1,4 @@
 
-<!-- <cdk-virtual-scroll-viewport itemSize="200" style="height:100vh;width:100%"> -->
-<div *ngFor="let doc of DoctorsList">
-  <app-list-item [doc]="doc"></app-list-item>
+  <div *cdkVirtualFor="let doc of DoctorsList">
+    <app-list-item [doc]="doc"></app-list-item>
 </div>
-<!-- </cdk-virtual-scroll-viewport> -->
